@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalDropship - Premium Dropshipping Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">GLOBALDROPSHIP</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">All Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>WHOLESALE PRODUCTS DIRECT TO YOUR CUSTOMERS</h1>
+            <p>Dropship trending items with zero inventory risk</p>
+            <a href="#shop" class="cta-button">BROWSE PRODUCTS</a>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories" id="categories">
+        <h2>SHOP BY CATEGORY</h2>
+        <div class="category-grid">
+            <div class="category-card" onclick="filterProducts('electronics')">
+                <img src="https://via.placeholder.com/300x200?text=Electronics" alt="Electronics">
+                <h3>Electronics</h3>
+            </div>
+            <div class="category-card" onclick="filterProducts('home')">
+                <img src="https://via.placeholder.com/300x200?text=Home+Goods" alt="Home Goods">
+                <h3>Home Goods</h3>
+            </div>
+            <div class="category-card" onclick="filterProducts('fashion')">
+                <img src="https://via.placeholder.com/300x200?text=Fashion" alt="Fashion">
+                <h3>Fashion</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products -->
+    <section class="featured-products" id="shop">
+        <h2>BESTSELLING PRODUCTS</h2>
+        <div class="product-grid">
+            <!-- Electronics -->
+            <div class="product-card" data-category="electronics">
+                <img src="https://via.placeholder.com/300x300?text=Wireless+Earbuds" alt="Wireless Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Home Goods -->
+            <div class="product-card" data-category="home">
+                <img src="https://via.placeholder.com/300x300?text=Air+Fryer" alt="Air Fryer">
+                <h3>5L Air Fryer</h3>
+                <p>$59.99</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Fashion -->
+            <div class="product-card" data-category="fashion">
+                <img src="https://via.placeholder.com/300x300?text=Designer+Watch" alt="Designer Watch">
+                <h3>Luxury Watch</h3>
+                <p>$79.99</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Add more products below -->
+            <div class="product-card" data-category="electronics">
+                <img src="https://via.placeholder.com/300x300?text=Smart+Watch" alt="Smart Watch">
+                <h3>Smart Watch</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GlobalDropship. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
